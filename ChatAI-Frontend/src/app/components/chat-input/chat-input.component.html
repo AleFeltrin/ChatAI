@@ -1,0 +1,7 @@
+<div class="wrapper row full-center">
+  <input #messageInput (keyup.enter)="sendMessage(messageInput)" [disabled]="apiService.loading()" type="text" placeholder="Type your message..." class="chat-input" />
+
+  <button class="send-button column full-center" [disabled]="apiService.loading()" (click)="sendMessage(messageInput)">
+    <img src="/assets/send-icon-2.png" alt="Send Icon" class="button-icon" />
+  </button>
+</div>

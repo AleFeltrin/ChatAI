@@ -1,0 +1,16 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../public/assets/marble-bg.svg");
+  background-size: 2700px auto;
+}
+
+.side-area {
+  flex: none;
+  height: 100%;
+}
+
+.chat-area {
+  flex: 1;
+  height: 100%;
+}

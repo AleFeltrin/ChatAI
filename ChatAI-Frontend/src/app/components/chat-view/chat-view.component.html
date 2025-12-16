@@ -1,0 +1,22 @@
+<div class="wrapper column full-center">
+  <div class="scrollable-container column" #scrollContainer>
+    @for (msg of apiService.messages(); track $index) {
+    <div class="content-item" [ngClass]="msg.role === 'user' ? 'user-message' : 'bot-message'">
+      <div class="message-header" [ngClass]="msg.role === 'user' ? 'user-header' : 'bot-header'">
+        <strong>{{ msg.role === "user" ? "You" : "Bot" }}</strong>
+        <span class="timestamp">{{ msg.createdAt | date : "dd/MM/yyyy, HH:mm" }}</span>
+      </div>
+      <p class="message-text">{{ msg.content }}</p>
+    </div>
+    } @if (apiService.loading()) {
+    <div class="content-item bot-message loading">
+      <strong>Bot</strong>
+      <p class="message-text"><em>Typing...</em></p>
+    </div>
+    } @if (apiService.messages().length === 0 && !apiService.loading()) {
+    <div class="content-item empty-state">
+      <p>No messages yet. Start a conversation!</p>
+    </div>
+    }
+  </div>
+</div>
