@@ -20,13 +20,13 @@ Chatbot intelligente con elaborazione del linguaggio naturale e memoria conversa
 ### Nuova Conversazione
 Schermata iniziale per avviare una nuova chat:
 
-![New Chat](images/Cattura1.PNG)
+![New Chat](images/Cattura1b.PNG)
 
 *Interfaccia per iniziare una nuova conversazione*
 
 ### Interfaccia Chat
 L'interfaccia principale mostra la conversazione con il modello AI:
 
-![Chat Interface](images/Cattura2.PNG)
+![Chat Interface](images/Cattura2b.PNG)
 
 *Vista della chat con domande dell'utente e risposte dettagliate del modello*
